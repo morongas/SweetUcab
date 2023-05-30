@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Ucab</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/usuario.css">
+</head>
+<body>
+    <h1><img src="/static/imagenes/sweetucab.png"></h1>
+    <nav>
+        <ul>
+            <li><a href="/static/informacionUser.html">Informacion</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/static/index.html">Cerrar Sesion</a></li>
+        </ul>
+    </nav> 
+    <div class="contenido">
+        <div class="col-md-4 offset-md-4">
+            <h1 style="color: black;" id="bienvenido"></h1>
+           
+
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(1)" id="fp">Forma de pago</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(2)" id="compra">COMPRAR</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(3)" id="pedidos">Ver Pedidos</button></div>
+            <div style="text-align:center;"> <button class="btn btn-primary" onclick="Redireccion(4)" id="cajero">CAJERO</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(5)" id="descuentos">CREAR DESCUENTOS</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(6)" id="telf">Agregar Telfono</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(7)" id="dir">Agregar Direccion</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(8)" id="pc">Agregar Persona de contacto</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(9)" id="desc">VER DESCUENTOS</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(10)" id="rt">RESTOCK</button></div>
+            <div style="text-align:center;"><button class="btn btn-primary" onclick="Redireccion(11)" id="pas">ALERTAS PASILLO</button></div>
+
+            <ul id="userList" class="list-group">    
+                
+            </ul>
+        </div>
+    </div>
+
+    <script src="/static/usuario.js"></script>
+</body>
+</html>

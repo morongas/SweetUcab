@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Ucab</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/registroUser.css">
+</head>
+<body>
+    <h1><img src="/static/imagenes/sweetucab.png"></h1>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/static/inicioSesion.html">Login</a></li>
+        </ul>
+    </nav> 
+    <div class="contenido">
+
+        <div class="col-md-4 offset-md-4">
+            <h1>  REGISTRO </h1>
+            <form id="userForm" class="card card-body text-white" style="background-color:#f5d1c6 ;">
+
+                <label for="nombre">Primer Nombre</label>
+                <input type="text"
+                    name="nombre"
+                    placeholder="nombre"	
+                    class="form-control mb-2"
+                    required
+                />
+
+                <label for="snombre">Segundo Nombre</label>
+                <input type="text"
+                    name="snombre"
+                    placeholder="Segundo Nombre"	
+                    class="form-control mb-2"
+                />
+                <label for="apellido">Primer Apellido</label>
+                <input type="text"
+                    name="apellido"
+                    placeholder="Apellido"	
+                    class="form-control mb-2"
+                    required
+                />
+                <label for="sapellido">Segundo Apellido</label>
+                <input type="text"
+                    name="sapellido"
+                    placeholder="Segundo Apellido"	
+                    class="form-control mb-2"
+                />
+                <label for="ci">Cedula</label>
+                <input type="integer"
+                    name="ci"
+                    placeholder="C.I"	
+                    class="form-control mb-2"
+                    required
+                />
+                <label for="sal">Salario</label>
+                <input type="integer"
+                    name="sal"
+                    placeholder="Salario SIN Tipo De moneda"	
+                    class="form-control mb-2"
+                    required
+                />
+                <label for="tienda">Nombre de la tienda donde trabaja</label>
+                <input type="text"
+                    name="tienda"
+                    placeholder="tienda"	
+                    class="form-control mb-2"
+                    required
+                />
+                <button class="btn btn-primary" onclick="Redireccion()">Guardar</button>
+
+            </form>
+            
+            <ul id="userList" class="list-group">    
+                
+            </ul>
+        </div>
+
+    </div>
+    <script src="/static/guardarEmp.js"></script>
+
+</body>
+</html>

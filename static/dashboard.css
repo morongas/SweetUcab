@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+    color: white;
+    padding: 20px;
+}
+
+h1 img {
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+}
+
+nav ul {
+    background-color: #f0a5d0;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+nav li:hover {
+    background-color: #757575;
+}
+
+#dulceMNV{
+    background-color: black;
+    list-style-type: none;
+    text-align: center;
+    font-size: 30px;
+}

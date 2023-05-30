@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Ucab</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/registroUser.css">
+</head>
+<body>
+    <h1><img src="/static/imagenes/sweetucab.png"></h1>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/static/inicioSesion.html">Login</a></li>
+        </ul>
+    </nav> 
+    <div class="contenido">
+
+        <div class="col-md-4 offset-md-4">
+            <h1>  EDITAR </h1>
+            <form id="userForm" class="card card-body text-white" style="background-color:#f5d1c6 ;">
+
+                <label for="nombre">Nombre</label>
+                <input type="text"
+                    name="nombre"
+                    placeholder="nombre"	
+                    class="form-control mb-2"
+                    id="nombre"
+                    required
+                />
+                <label for="descripcion">Descripcion</label>
+                <input type="text"
+                    name="descripcion"
+                    placeholder="descripcion"	
+                    class="form-control mb-2"
+                    id="descripcion"
+                    required
+                />
+
+                <button class="btn btn-primary" onclick="Redireccion()">Guardar</button>
+
+            </form>
+            
+        </div>
+
+    </div>
+    <script src="/static/editarRol.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Ucab</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/registroUser.css">
+</head>
+<body>
+    <h1><img src="/static/imagenes/sweetucab.png"></h1>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/static/inicioSesion.html">Login</a></li>
+        </ul>
+    </nav> 
+    <div class="contenido">
+
+        <div class="col-md-4 offset-md-4">
+            <h1>  REGISTRO DIRECCION </h1>
+            <form id="userForm" class="card card-body text-white" style="background-color:#f5d1c6 ;">
+
+                <label for="l_nombre">nombre</label>
+                <input type="text"
+                    name="l_nombre"
+                    placeholder="Nombre"	
+                    class="form-control mb-2"
+                    required
+                />
+
+                <label for="exampleSelect1" class="form-label mt-4">Tipo del lugar</label>
+                <select class="form-select" id="l_tipo">
+                    <option value="Estado">Estado</option>
+                    <option value="Municipio">Municipio</option>
+                </select>
+
+                <button class="btn btn-primary">Guardar</button>
+
+            </form>
+            
+            <ul id="userList" class="list-group">    
+                
+            </ul>
+        </div>
+
+    </div>
+    <script src="/static/direccion.js"></script>
+
+</body>
+</html>

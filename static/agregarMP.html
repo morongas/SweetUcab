@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Ucab</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/agregarMP.css">
+</head>
+<body>
+    <h1><img src="/static/imagenes/sweetucab.png"></h1>
+    <nav>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/carrito"><img src="/static/imagenes/carrito.png"></a></li>
+        </ul>
+    </nav> 
+    <div class="contenido">
+        <div class="col-md-4 offset-md-4">
+            <h1>  METODOS DE PAGO</h1>
+            <form id="aggMP" class="card card-body text-white" style="background-color:#f5d1c6">
+                <div class="radio" id ="metodos">
+                    <h2>Seleccione el metodo de pago a agregar:</h2>
+                    <input type="radio" name="metodo" id="Tarjeta de Credito">
+                    <label for="Tarjeta de Credito">Tarjeta de Credito</label>
+
+                    <input type="radio" name="metodo" id="Tarjeta de Debito">
+                    <label for="Tarjeta de Debito">Tarjeta de Debito</label>
+
+                    <input type="radio" name="metodo" id="Zelle">
+                    <label for="Zelle">Zelle</label>
+
+                    <input type="radio" name="metodo" id="PayPal">
+                    <label for="PayPal">PayPal</label>
+                </div>
+                <button class="btn btn-primary" onclick="Redireccion()">Siguiente</button>
+            </form>
+        </div>
+    </div>
+    <script src="/static/agregarMP.js"></script>
+
+</body>
+</html>

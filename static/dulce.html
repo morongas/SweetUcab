@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Ucab</title>
+    <!-- Bootswatch -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/pulse/bootstrap.min.css"
+    />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="/static/dulce.css" />
+  </head>
+  <body>
+    <h1><img src="/static/imagenes/sweetucab.png"></h1>
+    <nav>
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+      <h1 id="titulo"></h1>
+    <div class="contenido">
+      <div class="col-md-4 offset-md-4">
+        <form
+          id="dulceForm"
+          class="card card-body text-white"
+          style="background-color: #9fd6d9f8"
+        >
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            class="form-control mb-2"
+            required
+          />
+          <label for="precio">Precio</label>
+          <input
+            type="number"
+            name="precio"
+            placeholder="Precio"
+            class="form-control mb-2"
+            required
+          />
+          <label for="descripcion">Descripcion</label>
+          <input
+            type="text"
+            name="descripcion"
+            placeholder="Describa el caramelo"
+            class="form-control mb-2"
+            required
+          />
+          <label for="peso">Peso</label>
+          <input
+            type="number"
+            name="peso"
+            placeholder="Indique el peso del caramelo"
+            class="form-control mb-2"
+            required
+          />
+          
+          <label for="tipo">Tipo</label>
+          <select class="form-select" id="tipo"></select>
+
+          <label for="forma">Forma</label>
+          <select class="form-select" id="forma"></select>
+
+          <label for="tamano">Tamano</label>
+          <select class="form-select" id="tamano"></select>
+
+          <label for="color">Color</label>
+           <div class="form-check" id="colordiv">
+          </div>
+          
+          <label for="sabor">Sabor</label>
+          <div class="form-check" id="sabordiv">
+          </div>
+    
+          <label for="imagen">Imagen</label>
+          <input
+            type="file"
+            name="imagen"
+            class="form-control mb-2"
+            required
+          />
+
+          <button class="btn btn-primary">Guardar</button>
+        </form>
+      </div>
+    </div>
+    <script src="/static/dulce.js"></script>
+  </body>
+</html>

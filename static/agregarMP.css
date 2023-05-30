@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    background-color: white;
+    color: white; 
+    padding: 20px;
+ }
+h1 img{
+    width: 170px;
+    height: 100px;
+    object-fit: cover;
+}
+nav ul{
+    background-color: #f0a5d0;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+    display: inline-flex;
+}
+nav a{
+    text-decoration: none;  
+    color: white;
+    padding: 10px;
+    width: 150px; 
+}
+nav li:hover{
+    background-color: #757575;
+}
+nav li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+.contenido{
+    text-align: center;
+    color: black; 
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.contenido button{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contenido h1{
+    text-align: center;
+    color: black; 
+    padding: 20px;
+}
+
+.contenido h2{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contenido > div{
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.contenido input[type="radio"]{
+    display: none;
+}
+
+.contenido .radio label{
+    color: #f012be;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contenido .radio label:hover{
+    background: rgba(240,18,190,0.2);
+}
+
+.contenido .radio label:before{
+    content : "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #f012be;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+
+
+.contenido input[type="radio"]:checked + label{
+    padding: 5px 15px;
+    background: #f012be;
+    border-radius: 2px;
+    color: black
+}
+
+
+.contenido input[type="radio"]:checked + label::before{
+    display: none;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Ucab</title>
+    <!-- Bootswatch -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="/static/dulce.css" />
+</head>
+
+<body class="bg-dark text-white">
+    <h1><img src="/static/imagenes/sweetucab.png"></h1>
+    <nav>
+        <ul>
+            <li><a href="/static/admin.html">Inicio</a></li>
+            <li><a href="/static/index.html">Cerrar Sesion</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>TABLA DEL REGISTRO HUMANO</h1>
+    <table class="table table-hover text-white" cellspacing = 15>
+        <tr class="table-primary">
+            <th style="width:12%">CI DEL EMPLEADO</th>
+            <th style="width:12%">NOMBRE Y APELLIDO</th>
+            <th style="width:12%">TOTAL DE INASISTENCIA EN PERIODO DE TIEMPO</th>
+            <th style="width:12%">TOTAL DE LLEGADAS TARDE EN PERIODO DE TIEMPO</th>
+            <th style="width:12%">TOTAL DE CUMPLIMIENTO DE HORARIO EN PERIODO DE TIEMPO</th>
+            <th style="width:12%">HORA DE ENTRADA PROMEDIO</th>
+            <th style="width:12%">HORA DE SALIDA PROMEDIO</th>
+            <th style="width:12%">HORA DE ENTRADA ASIGNADA</th>
+            <th style="width:12%">HORA DE SALIDA ASIGNADA</th>
+        </tr>
+
+        <tbody id="table">
+
+        </tbody>
+    </table>
+    <button id="generar" class="btn btn-primary">Generar PDF</button>
+    <script src="/static/tablaPDF.js"></script>
+</body>
+
+</html>
