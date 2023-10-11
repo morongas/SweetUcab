@@ -1,7 +1,7 @@
 # Proyecto-SweetUcab
 
 ***Proyecto de la materia Bases de Datos I |
-Autores: Carlos Moron, Italo Visconti (Los extraterrestres)***
+Autores: Carlos Moron, Italo Visconti***
 
 ECommerce enfocado en la venta de caramelos, producidos y distribuidos por la empresa ficticia "Sweet Ucab", asi como manejo de Inventario, Pedidos/Despachos, Locales y Empleados por parte de la Empresa.
 
